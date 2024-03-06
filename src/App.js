@@ -19,10 +19,10 @@ function App() {
   }
 
   const randomChoice=()=> {
-    const choiceKeys=Object.keys(choice)
-    let randomNumber= Math.floor(Math.random() * choiceKeys.length)
-
-    return choice[choiceKeys[randomNumber]]
+    const itemArray=Object.keys(choice)
+    let randomItem= Math.floor(Math.random() * itemArray.length)
+    let final = itemArray[randomItem]
+    return choice[final]
   }
 
   return (
