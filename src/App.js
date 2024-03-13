@@ -11,11 +11,25 @@ import React, { useState } from "react";
 function App() {
   const [ userSelect, setUserSelect ] = useState(null)
   const [ computerSelect, setComputerSelect ] = useState(null)
+  const [ result, setResult] = useState("")
   const play= (userChoice)=>{
-    console.log("선택됨",userChoice)
     setUserSelect(choice[userChoice])
     let computerChoice = randomChoice()
     setComputerSelect(computerChoice)
+    const userResult = judgement(choice[userChoice], computerChoice)
+    setResult(userResult)
+  }
+
+  const judgement=(user,computer) =>{
+    if (user.name === computer.name) {
+      return "tie"
+    } else if (user.name === "Rock") {
+      return computer.name === "Scissors" ? "win" : "lose"
+    } else if (user.name === "Scissors") {
+      return computer.name === "Paper" ? "win" : "lose"
+    } else if (user.name === "Paper") {
+      return computer.name === "Rock" ? "win" : "lose"
+    }
   }
 
   const randomChoice=()=> {
@@ -28,8 +42,8 @@ function App() {
   return (
     <div>
       <div className="main">
-        <Box title="you" item={userSelect}/>
-        <Box title="computer" item={computerSelect}/>
+        <Box title="you" item={userSelect} result={result}/>
+        <Box title="computer" item={computerSelect} result={result}/>
       </div>
       <div className="main">
         <button onClick={()=>play("scissors")}>가위</button>
