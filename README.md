@@ -1,73 +1,18 @@
-코딩알려주는누나_가위바위보_리액트프로젝트
+가위바위보\_리액트프로젝트
 
-# Getting Started with Create React App
+- 프로젝트 설명
+  사용자가 버튼을 눌러 컴퓨터와 가위바위보 게임을 한다.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- 주요 기능
 
-## Available Scripts
+1. useState = UI에 보여주기 위해 사용자 선택 값, 랜덤 컴퓨터 선택 값, 게임 결과를 useState로 만들어서
+   사용자가 가위,바위,보 버튼을 누를때마다 setState 실행하여 리렌더링 되게 한다.
 
-In the project directory, you can run:
+- 코드 작성 과정
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# rockpaperscissor
+1. 박스 2개(타이틀,사진,결과)
+2. 가위바위보 버튼
+3. 버튼 클릭하면 클릭한 값이 박스에 보인다
+4. 컴퓨터는 랜덤하게 아이템이 선택된다
+5. 3 4 의 결과를 가지고 누가 이겼는지 승패를 따진다
+6. 승패의 결과에 따라 테두리 색이 바뀐다(이기면 초록, 지면 빨강, 비기면 검정)
