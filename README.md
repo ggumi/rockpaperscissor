@@ -1,4 +1,5 @@
 가위바위보\_리액트프로젝트
+https://react-rockpaperscissor-geumhee.netlify.app/
 
 - 프로젝트 설명
   사용자가 버튼을 눌러 컴퓨터와 가위바위보 게임을 한다.
